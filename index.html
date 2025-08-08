@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haydenworx - Home Design Consulting & Project Management | Gainesville, GA</title>
+    <!-- Force Git refresh -->
+    <meta name="description" content="Professional home design consulting, residential project management, and interior design services in Gainesville, GA. Led by Jeff Hayden with years of construction expertise.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+        
+        .hero {
+            background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.8)), 
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3rem;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #D4A574;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: #D4A574;
+            color: #2C1810;
+        }
+        
+        .btn-secondary {
+            background: #8B4513;
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #8B4513;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 2px solid #f0f0f0;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #D4A574;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-info h3 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero-content { padding: 2rem; margin: 1rem; }
+            .buttons { flex-direction: column; align-items: center; }
+            .section { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Professional Construction Consulting</h1>
+            <p>Expert home design consulting, residential project management, and interior design services in Gainesville, GA</p>
+            
+            <div class="buttons">
+                <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Home Design Consulting</h3>
+                <p>Expert guidance for your residential design projects with a focus on functionality and aesthetics.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Residential Project Management</h3>
+                <p>Complete oversight of your construction projects from planning to completion.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Interior Design Services</h3>
+                <p>Transform your living spaces with professional interior design solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <h2>About Jeff Hayden</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #666;">
+                With years of experience in construction and design, Jeff Hayden brings expertise 
+                and attention to detail to every project. Based in Gainesville, GA, Haydenworx 
+                provides professional consulting services for homeowners looking to build, 
+                renovate, or redesign their living spaces.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <h3>Get Your Free Consultation Today</h3>
+            
+            <div class="contact-item">
+                <strong>📍 Location:</strong><br>
+                Gainesville, GA 30506
+            </div>
+            
+            <div class="contact-item">
+                <strong>📞 Phone:</strong><br>
+                <a href="tel:770-905-9343" style="color: #8B4513; text-decoration: none;">770-905-9343</a>
+            </div>
+            
+            <div class="contact-item">
+                <strong>✉️ Email:</strong><br>
+                <a href="mailto:info@haydenworx.com" style="color: #8B4513; text-decoration: none;">info@haydenworx.com</a>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <a href="tel:770-905-9343" class="btn btn-primary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
