@@ -1,16 +1,26 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/api/*", "*.{css,scss,js,png,gif,ico,jpg,jpeg,svg,woff,woff2,eot,ttf,otf}"]
+    "exclude": [
+      "/api/*",
+      "*.{css,scss,js,png,gif,ico,jpg,jpeg,svg,woff,woff2,eot,ttf,otf}"
+    ]
   },
   "routes": [
     {
       "route": "/api/*",
-      "allowedRoles": ["anonymous"]
+      "allowedRoles": [
+        "anonymous"
+      ]
     },
     {
       "route": "/*",
-      "allowedRoles": ["anonymous"]
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/dist/public"
     }
   ],
   "responseOverrides": {
