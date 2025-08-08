@@ -22,7 +22,7 @@ export default function Hero() {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="max-w-3xl">
-          <div className="bg-black bg-opacity-60 backdrop-blur-sm rounded-xl p-8 mb-8">
+          <div className="bg-black bg-opacity-75 backdrop-blur-sm rounded-xl p-8 mb-8">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               From Vision to Reality
               <span className="block text-accent">Your Dream Home Awaits</span>
@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
           
           {/* Contact Info */}
-          <div className="bg-black bg-opacity-50 backdrop-blur-sm rounded-lg p-6">
+          <div className="bg-black bg-opacity-70 backdrop-blur-sm rounded-lg p-6">
             <div className="flex flex-col sm:flex-row gap-6 text-gray-100">
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-accent" />
