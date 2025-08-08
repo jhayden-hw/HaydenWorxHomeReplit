@@ -21,27 +21,25 @@ export default function Hero() {
       ></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-        <div className="max-w-3xl">
-          <div className="bg-black bg-opacity-75 backdrop-blur-sm rounded-xl p-8 mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <div className="max-w-2xl">
+          <div className="bg-black bg-opacity-75 backdrop-blur-sm rounded-xl p-6 mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
               From Vision to Reality
               <span className="block text-accent">Your Dream Home Awaits</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-100">
-              Expert home design consulting, residential project management, and interior design services in Gainesville, GA. 
-              Led by Jeff Hayden with years of construction expertise.
+            <p className="text-lg mb-6 text-gray-100">
+              Expert home design consulting, residential project management, and interior design services in Gainesville, GA.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact">
-                <Button size="lg" className="bg-accent text-charcoal hover:bg-accent/90 text-lg px-8 py-4">
+                <Button className="bg-accent text-charcoal hover:bg-accent/90 px-6 py-3">
                   Get Free Consultation
                 </Button>
               </Link>
               <Button 
-                size="lg" 
                 variant="outline" 
                 onClick={() => scrollToSection("services")}
-                className="border-2 border-white text-white hover:bg-white hover:text-charcoal text-lg px-8 py-4"
+                className="border-2 border-white text-white hover:bg-white hover:text-charcoal px-6 py-3"
               >
                 Our Services
               </Button>
@@ -49,19 +47,19 @@ export default function Hero() {
           </div>
           
           {/* Contact Info */}
-          <div className="bg-black bg-opacity-70 backdrop-blur-sm rounded-lg p-6">
-            <div className="flex flex-col sm:flex-row gap-6 text-gray-100">
+          <div className="bg-black bg-opacity-70 backdrop-blur-sm rounded-lg p-4">
+            <div className="flex flex-col sm:flex-row gap-4 text-gray-100 text-sm">
               <div className="flex items-center">
-                <Phone className="mr-3 h-5 w-5 text-accent" />
+                <Phone className="mr-2 h-4 w-4 text-accent" />
                 <span>(770) 905-9343</span>
               </div>
               <div className="flex items-center">
-                <Mail className="mr-3 h-5 w-5 text-accent" />
+                <Mail className="mr-2 h-4 w-4 text-accent" />
                 <span>info@haydenworx.com</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="mr-3 h-5 w-5 text-accent" />
-                <span>Gainesville, GA 30506</span>
+                <MapPin className="mr-2 h-4 w-4 text-accent" />
+                <span>Gainesville, GA</span>
               </div>
             </div>
           </div>
