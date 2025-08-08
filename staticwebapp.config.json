@@ -20,7 +20,7 @@
       ]
     },
     {
-      "route": "/dist/public"
+      "route": "/dist/public/*"
     }
   ],
   "responseOverrides": {
