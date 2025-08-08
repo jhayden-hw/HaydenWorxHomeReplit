@@ -22,43 +22,47 @@ export default function Hero() {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            From Vision to Reality
-            <span className="block text-accent">Your Dream Home Awaits</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Expert home design consulting, residential project management, and interior design services in Gainesville, GA. 
-            Led by Jeff Hayden with years of construction expertise.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Link href="/contact">
-              <Button size="lg" className="bg-accent text-charcoal hover:bg-accent/90 text-lg px-8 py-4">
-                Get Free Consultation
+          <div className="bg-black bg-opacity-60 backdrop-blur-sm rounded-xl p-8 mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              From Vision to Reality
+              <span className="block text-accent">Your Dream Home Awaits</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-gray-100">
+              Expert home design consulting, residential project management, and interior design services in Gainesville, GA. 
+              Led by Jeff Hayden with years of construction expertise.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
+                <Button size="lg" className="bg-accent text-charcoal hover:bg-accent/90 text-lg px-8 py-4">
+                  Get Free Consultation
+                </Button>
+              </Link>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                onClick={() => scrollToSection("services")}
+                className="border-2 border-white text-white hover:bg-white hover:text-charcoal text-lg px-8 py-4"
+              >
+                Our Services
               </Button>
-            </Link>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              onClick={() => scrollToSection("services")}
-              className="border-2 border-white text-white hover:bg-white hover:text-charcoal text-lg px-8 py-4"
-            >
-              Our Services
-            </Button>
+            </div>
           </div>
           
           {/* Contact Info */}
-          <div className="flex flex-col sm:flex-row gap-6 text-gray-200">
-            <div className="flex items-center">
-              <Phone className="mr-3 h-5 w-5 text-accent" />
-              <span>(770) 905-9343</span>
-            </div>
-            <div className="flex items-center">
-              <Mail className="mr-3 h-5 w-5 text-accent" />
-              <span>info@haydenworx.com</span>
-            </div>
-            <div className="flex items-center">
-              <MapPin className="mr-3 h-5 w-5 text-accent" />
-              <span>Gainesville, GA 30506</span>
+          <div className="bg-black bg-opacity-50 backdrop-blur-sm rounded-lg p-6">
+            <div className="flex flex-col sm:flex-row gap-6 text-gray-100">
+              <div className="flex items-center">
+                <Phone className="mr-3 h-5 w-5 text-accent" />
+                <span>(770) 905-9343</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="mr-3 h-5 w-5 text-accent" />
+                <span>info@haydenworx.com</span>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="mr-3 h-5 w-5 text-accent" />
+                <span>Gainesville, GA 30506</span>
+              </div>
             </div>
           </div>
         </div>
