@@ -5,6 +5,7 @@ This is a home design consulting and project management web application for Hayd
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Azure Integration: User is an Azure Architect consultant interested in integrating with Azure and M365 environment for enterprise features.
 
 # System Architecture
 
@@ -40,6 +41,20 @@ Current schema includes:
 - **Drizzle ORM**: Type-safe database interactions with PostgreSQL dialect configuration
 
 The application uses Drizzle Kit for database migrations and schema management, currently configured for PostgreSQL but using in-memory storage for development.
+
+## Azure Integration Architecture
+The application has been configured for Azure Static Web Apps deployment with the following components:
+- **Azure Static Web Apps**: Frontend hosting with global CDN and automatic SSL
+- **Azure Functions**: Serverless backend API for contact form processing
+- **GitHub Actions**: Automated CI/CD pipeline for deployment
+- **Azure-ready scaling**: Configured for enterprise-grade hosting and monitoring
+
+### Deployment Structure
+- Frontend builds to `client/dist` for static hosting
+- Backend migrated to Azure Functions in `api/` directory
+- GitHub Actions workflow handles automatic deployment
+- CORS and security headers configured for production
+- Environment variables managed through Azure portal
 
 # External Dependencies
 

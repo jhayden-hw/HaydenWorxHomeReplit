@@ -1,0 +1,11 @@
+# Ignored files for Azure Functions
+*.js.map
+*.ts.map
+.git*
+.vscode
+local.settings.json
+test
+.DS_Store
+node_modules/.bin
+node_modules/@types
+node_modules/azure-functions-core-tools

@@ -1,0 +1,15 @@
+{
+  "name": "haydenworx-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for Haydenworx Construction Consulting",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@azure/functions": "^4.5.1"
+  }
+}
