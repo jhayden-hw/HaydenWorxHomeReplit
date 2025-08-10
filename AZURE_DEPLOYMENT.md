@@ -6,7 +6,7 @@
 - Azure account (free tier available)
 - GitHub repository for your Haydenworx project
 - Azure CLI installed (optional, but recommended)
-dfdfdffdfdhftrgfdfdfd
+dfdfdffdfdhftrgfdfdfdfdfdfds
 ### 2. Azure Portal Setup
 
 1. **Create Azure Static Web App:**
