@@ -18,6 +18,9 @@
       "allowedRoles": [
         "anonymous"
       ]
+    },
+    {
+      "route": "/dist/public/*"
     }
   ],
   "responseOverrides": {
